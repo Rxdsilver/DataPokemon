@@ -28,7 +28,6 @@ def getCompIndex(team, comp) :
     compNumber = []
     for pokeT in team :
         for pokeC in comp :
-            print(pokeT+pokeC)
             if pokeT == pokeC.split('-')[0] :
                 compNumber.append(team.index(pokeT)+1)
     return compNumber
